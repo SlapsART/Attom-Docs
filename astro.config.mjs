@@ -7,7 +7,7 @@ export default defineConfig({
 	// Cambia esta URL por la URL de tu sitio publicado
 	site: 'https://slapsart.github.io',
 	// Si tu sitio está en un subdirectorio, descomenta y ajusta la siguiente línea
-	base: '/Attom-Docs',
+	base: '/Attom-Docs/src/content/docs/index.mdx',
 	integrations: [
 		starlight({
 			title: 'My Docs',
