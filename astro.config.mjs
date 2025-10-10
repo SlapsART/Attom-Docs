@@ -17,7 +17,7 @@ export default defineConfig({
 					label: 'Investigación IA',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Fundamentos', slug: 'investigacion/fundamentos' },
+						{ label: 'Fundamentos', slug: 'investigacion/fundamentos-ia' },
 					],
 				},
 				{
