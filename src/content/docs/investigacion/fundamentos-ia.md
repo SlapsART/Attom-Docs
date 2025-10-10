@@ -1,10 +1,11 @@
 ---
-title: Fundamentos IA
-description: A guide in my new Starlight docs site.
+title: Proceso IA
+description: Empecemos con todo lo que tenemos de la IA
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
-Writing a good guide requires thinking about what your users are trying to do.
+Esta sección en especialmente para dejar claridad del proceso de estandarización en el uso de herramientos, todas las decisiones tomadas por el equipo se verán reflejadas aquí.
+
+
 
 ## Further reading
 
