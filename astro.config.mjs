@@ -21,6 +21,14 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'Componentes',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Fundamentos', slug: 'componentes/fundamentos' },
+						{ label: 'Fundamentos', slug: 'componentes/basicos' },
+					],
+				},
+				{
 					label: 'Guides',
 					items: [
 						// Each item here is one entry in the navigation menu.
