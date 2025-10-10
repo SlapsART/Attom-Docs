@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "attom-docs",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -12,6 +12,22 @@
   "dependencies": {
     "@astrojs/starlight": "^0.36.0",
     "astro": "^5.6.1",
+    "fs-extra": "^11.3.2",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
     "sharp": "^0.34.2"
-  }
+  },
+  "description": "[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SlapsART/Attom-Docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SlapsART/Attom-Docs/issues"
+  },
+  "homepage": "https://github.com/SlapsART/Attom-Docs#readme"
 }
