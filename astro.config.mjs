@@ -10,8 +10,8 @@ export default defineConfig({
 	base: '/Attom-Docs',
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'Attom Docs',
+			//social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
 					label: 'Investigación IA',
@@ -25,7 +25,7 @@ export default defineConfig({
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Fundamentos', slug: 'componentes/fundamentos' },
-						{ label: 'Fundamentos', slug: 'componentes/basicos' },
+						{ label: 'Básicos', slug: 'componentes/basicos' },
 					],
 				},
 				{
