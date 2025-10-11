@@ -1,0 +1,134 @@
+---
+title: Proceso IA
+description: Empecemos con todo lo que tenemos de la IA
+---
+
+
+import { Icon } from '@astrojs/starlight/components';
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+
+Esta sección existe para dejar totalmente claro cómo se estandariza el uso de herramientas dentro del equipo.
+
+Aquí encontrarás todas las decisiones y lineamientos que el equipo ha definido para garantizar coherencia, eficiencia y una integración fluida —incluyendo la incorporación de agentes de IA o LLMs— que ayuden a acelerar y escalar el proceso de diseño.
+
+
+
+### ⚙️ Desarrollo
+
+
+:::note[Objetivo Principal]
+Potenciar al equipo mediante la integración de IA en el proceso de diseño, optimizando tiempos y manteniendo calidad y coherencia.
+:::
+
+:::tip[Cómo vamos a hacerlo real?]
+**Estructurando un ciclo de uso de IA**
+:::
+
+<br/>
+<br/>
+{/* Propuesta de CARDS abiertas */}
+
+#### 🚦 Proceso actual (Sin IA)
+<CardGrid>
+  <Card title="1. Empatizar" icon="rocket"></Card>
+  <Card title="2. Definir" icon="pen"></Card>
+  <Card title="3. Idear" icon="sun"></Card>
+  <Card title="4. Prototipar" icon="setting"></Card>
+  <Card title="5. Probar" icon="open-book"></Card>
+</CardGrid>
+
+
+#### 🚀 Proceso incluyendo IA
+<CardGrid>
+  <Card title="1. Empatizar" icon="rocket"></Card>
+  <Card title="2. Definir" icon="pen"></Card>
+  <Card title="3. Idear" icon="sun"></Card>
+  <Card title="4. Prototipar" icon="setting"></Card>
+  <Card title="5. Probar" icon="open-book"></Card>
+</CardGrid>
+
+<br/>
+<br/>
+{/* Propuesta en tabs */}
+
+<Tabs>
+  <TabItem label="🚦 Sin IA">
+    **Proceso Actual**
+      <Card title="1. Empatizar" icon="rocket"></Card>
+      <Card title="2. Definir" icon="pen"></Card>
+      <Card title="3. Idear" icon="sun"></Card>
+      <Card title="4. Prototipar" icon="setting"></Card>
+      <Card title="5. Probar" icon="open-book"></Card>
+  </TabItem>
+  <TabItem label="🚀 Con IA">
+    **Futuro Proceso**
+      <Card title="1. Empatizar" icon="rocket"></Card>
+      <Card title="2. Definir" icon="pen"></Card>
+      <Card title="3. Idear" icon="sun"></Card>
+      <Card title="4. Prototipar" icon="setting"></Card>
+      <Card title="5. Probar" icon="open-book"></Card>
+  </TabItem>
+</Tabs>
+
+<br/>
+<br/>
+{/* Propuesta en Accordions */}
+
+<details>
+  <summary>**🚦 Sin IA | Proceso actual**</summary>
+    :::note[1. Empatizar]
+    :::
+    :::note[2. Definir]
+    :::
+    :::note[3. Idear]
+    :::
+    :::note[4. Prototipar]
+    :::
+    :::note[5. Probar]
+    :::
+    <Card title="1. Empatizar" icon="rocket"></Card>
+    <Card title="2. Definir" icon="pen"></Card>
+    <Card title="3. Idear" icon="sun"></Card>
+    <Card title="4. Prototipar" icon="setting"></Card>
+    <Card title="5. Probar" icon="open-book"></Card>
+</details>
+
+<details>
+  <summary>**🚀 Con IA |Futuro Proceso**</summary>
+    <Card title="1. Empatizar" icon="rocket"></Card>
+    <Card title="2. Definir" icon="pen"></Card>
+    <Card title="3. Idear" icon="sun"></Card>
+    <Card title="4. Prototipar" icon="setting"></Card>
+    <Card title="5. Probar" icon="open-book"></Card>
+</details>
+
+<br/>
+<br/>
+{/* Propuesta en div */}
+
+**🚦 Sin IA | Proceso actual**
+<div>
+  <div style= {{ display: 'flex', gap: '8px', alignItems: 'center', width: '100%'}}>
+    <dl style={{ padding: '12px', backgroundColor: '#f5f5f5', borderRadius: '4px', listStylePosition: 'inside', listStyleType: 'none', margin: '0px', width: '100%' }}>
+      <dt>**1. Empatizar**</dt>
+    </dl>
+      <dl style={{ padding: '12px', backgroundColor: '#f5f5f5', borderRadius: '4px', listStylePosition: 'inside', listStyleType: 'none', margin: '0px', width: '100%' }}>
+      <dt>**1. Empatizar**</dt>
+    </dl>
+  </div>
+  <div style= {{ display: 'flex', gap: '8px', alignItems: 'center', width: '100%'}}>
+    <dl style={{ padding: '12px', backgroundColor: '#f5f5f5', borderRadius: '4px', listStylePosition: 'inside', listStyleType: 'none', margin: '0px', width: '100%' }}>
+      <dt>**1. Empatizar**</dt>
+    </dl>
+      <dl style={{ padding: '12px', backgroundColor: '#f5f5f5', borderRadius: '4px', listStylePosition: 'inside', listStyleType: 'none', margin: '0px', width: '100%' }}>
+      <dt>**1. Empatizar**</dt>
+    </dl>
+  </div>
+    <div style= {{ display: 'flex', gap: '8px', alignItems: 'center', width: '100%'}}>
+    <dl style={{ padding: '12px', backgroundColor: '#f5f5f5', borderRadius: '4px', listStylePosition: 'inside', listStyleType: 'none', margin: '0px', width: '50%', marginRight: '8px' }}>
+      <dt>**1. Empatizar**</dt>
+    </dl>
+  </div>
+</div>

@@ -11,6 +11,19 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Attom Docs',
+
+			// Intento de confirguraciones diferentes idiomas. --- Posponer por ahora ---
+			
+			/*locales: {
+				es: {label: 'Español', lang: 'es', dir: 'ltr' },
+			},
+			defaultLocale: 'es',*/
+
+			logo: {src: './src/assets/Attomito.svg', alt: 'Attom Docs Logo',
+				replacesTitle: true
+			},
+			description: 'Documentación oficial del diseño y desarrollo del sistema de diseño Attom.',
+			// Optional: add links to your social media profiles
 			//social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
