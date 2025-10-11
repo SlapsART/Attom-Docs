@@ -13,20 +13,15 @@ hero:
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard } from '@astrojs/starlight/components';
 
 ## Próximamente
 
+
+
 <CardGrid>
-	<Card title="Update content" icon="pencil">
-		Edit `attom-docs/src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+	<LinkCard title="Roadmap IA" href="/es/guides/i18n/"description="Definiciones, alcance y objetivos del uso de IA en procesos de diseño"/>
+	<LinkCard title="Versionamiento" href="/es/guides/i18n/"description="Versionamiento del UI KIT, estado de componentes, nuevos elementos y guía de usos."/>
+	<LinkCard title="Versionamiento en desarrollo" href="/es/guides/i18n/"description="Versiones actuales, librerías, dependencias, estado de componentes, fechas de publicación y comandos escenciales."/>
+	<LinkCard title="Espacio para observaciones" href="/es/guides/i18n/"description="Envía tus comentarios, ajustes, opciones de mejora y solicitudes especificas para el UI KIT y la librería @sinco/react."/>
 </CardGrid>
