@@ -1,0 +1,10 @@
+:root {
+  --color-accent: #4741B5;
+  --sl-color-text: #1d1d27;
+
+  --BorderRadius: 8px;
+}
+
+.card {
+  border-radius: 16px !important; /* Cambia 16px por lo que quieras */
+}
