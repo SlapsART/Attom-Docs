@@ -1,10 +1,52 @@
 :root {
   --color-accent: #4741B5;
-  --sl-color-text: #1d1d27;
+  --color-accent-dark: #dbdaff;
 
   --BorderRadius: 8px;
 }
 
 .card {
   border-radius: 16px !important; /* Cambia 16px por lo que quieras */
+}
+
+.sl-steps > li::before{
+  color: transparent !important;
+  background-color: var(--color-accent-dark) !important;
+  border: 0.1px solid var(--color-accent-dark) !important;
+}
+
+#Test-Step .sl-steps > li::before{
+  display: none !important;
+}
+
+#Test-Step .Test{
+  margin-left: -7% !important;
+}
+
+#badgeVersionAnterior{
+  background-color: #f5f5f5 !important;
+  color: black !important;
+}
+
+#badgeVersionActual{
+  background-color: var(--color-accent) !important;
+  color: var(--color-accent-dark) !important;
+}
+
+#tableActualizacion{
+  width: 100% !important;
+  border-radius: var(--BorderRadius) !important;
+}
+
+#tableActualizacion table{
+  padding: 16px !important;
+  margin-top: 16px !important;
+}
+
+#tableActualizacion thead{
+  width: 100% !important;
+}
+
+#tableActualizacion tbodyee{
+  width: 100% !important;
 }

@@ -19,7 +19,7 @@ export default defineConfig({
 			},
 			defaultLocale: 'es',*/
 
-			logo: {src: './src/assets/Attomito.svg', alt: 'Attom Docs Logo',
+			logo: {src: './src/assets/Attom-DS.svg', alt: 'Attom Docs Logo',
 				replacesTitle: true
 			},
 			description: 'Documentación oficial del diseño y desarrollo del sistema de diseño Attom.',
@@ -37,6 +37,7 @@ export default defineConfig({
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Acerca de Attom DS', slug: 'introduccion/acerca-de-attom' },
 						{ label: 'Actualizaciones', slug: 'introduccion/actualizaciones' },
+						{ label: 'Versionamiento', slug: 'introduccion/versiones' },
 					],
 				},
 				{
