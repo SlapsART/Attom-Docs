@@ -1,37 +1,92 @@
-:root {
-  --color-accent: #4741B5;
-  --color-accent-dark: #dbdaff;
+/*Estilos globales*/
 
-  --BorderRadius: 8px;
+:root {
+
+  /*Text*/
+
+    --text-badge: #080620;
+
+  /*Accent*/
+
+    --color-accent: #4741B5;
+    --sl-color-text-accent: #4741B5;
+    --color-accent-5: #fdfdff;
+    --color-accent-50: #ebebfc;
+
+  /*Grey*/
+
+    --color-grey-5: rgb(252, 252, 252);
+    --color-grey-50: #e3e3e4;
+
+  /*Border Radius*/
+
+    --BorderRadius: 8px;
+
+  /*Sinco Colors*/
+
+    /*Primary*/
+
+      --color-sinco-50: #E4ECF4;
+      --color-sinco-100: #BCD0E3;
+      --color-sinco-200: #BCD0E3;
+      --color-sinco-300: #6392BD;
+      --color-sinco-Light: #417AAE;
+      --color-sinco-Main: #2063A0;
+      --color-sinco-600: #1C5B98;
+      --color-sinco-700: #18518E;
+      --color-sinco-800: #0055B3;
+      --color-sinco-Dark: #0B3573;
+
+    /*Secondary*/
+    
+      --color-secondary-sinco-50: #E0F7FA;
+      --color-secondary-sinco-100: #E0F7FA;
+      --color-secondary-sinco-200: #E0F7FA;
+      --color-secondary-sinco-300: #4DD0E1;
+      --color-secondary-sinco-Light: #26C6DA;
+      --color-secondary-sinco-Main: #00BCD4;
+      --color-secondary-sinco-600: #00B6CF;
+      --color-secondary-sinco-700: #00ADC9;
+      --color-secondary-sinco-800: #00A5C3;
+      --color-secondary-sinco-Dark: #0097B9;
 }
+
+/*Estilos globales cards*/
 
 .card {
-  border-radius: 16px !important; /* Cambia 16px por lo que quieras */
+  border-radius: 16px !important;
 }
+
+/*Estilos versionamiento desarrollo Stepper*/
 
 .sl-steps > li::before{
   color: transparent !important;
-  background-color: var(--color-accent-dark) !important;
-  border: 0.1px solid var(--color-accent-dark) !important;
+  background-color: var(--color-accent-50) !important;
+  border: 0.1px solid var(--color-accent-50) !important;
 }
 
 #Test-Step .sl-steps > li::before{
   display: none !important;
 }
 
+/*Estilos versionamiento chip*/
+
 #Test-Step .Test{
   margin-left: -7% !important;
 }
 
 #badgeVersionAnterior{
-  background-color: #f5f5f5 !important;
+  background-color: var(--color-grey-50) !important;
   color: black !important;
+  border: 0px !important;
 }
 
 #badgeVersionActual{
   background-color: var(--color-accent) !important;
-  color: var(--color-accent-dark) !important;
+  color: var(--color-accent-50) !important;
 }
+
+/*Estilos versionamiento componentes | Tabla*/
 
 #tableActualizacion{
   width: 100% !important;
@@ -41,12 +96,131 @@
 #tableActualizacion table{
   padding: 16px !important;
   margin-top: 16px !important;
+  width: 100% !important;
 }
 
 #tableActualizacion thead{
   width: 100% !important;
 }
 
-#tableActualizacion tbodyee{
+#tableActualizacion tbody{
   width: 100% !important;
 }
+
+#tableActualizacion1 table{
+  margin-top: 16px !important;
+  border-radius: 8px 8px 0px 0px !important;
+}
+
+#tableActualizacion1 thead th{
+  border: 0px solid !important;
+  background-color: var(--color-accent-50);
+  padding: 12px;
+}
+
+.componenteNombre{
+  width: 60% !important;
+}
+
+.componenteEstado{
+  width: 20% !important;
+  text-align: center !important;
+  align-items: center !important;
+}
+
+.componenteVersion{
+  width: 20% !important;
+  text-align: center !important;
+  align-items: center !important;
+}
+
+#dividerCategoria{
+  width: 100% !important;
+}
+
+#componenteCategoria{
+  width: 100% !important;
+  border-bottom: 0px !important;
+  font-weight: 600 !important;
+}
+
+#tableActualizacion1 tbody td{
+  border-bottom: var(--color-accent-50) 1px solid !important;
+  padding: 12px;
+}
+
+.textoCategoria{
+  font-weight: 600 !important;
+  padding: 18px !important;
+}
+
+.tablaCategoria{
+  background-color: var(--color-accent-5) !important;
+}
+
+/*Estilos badge | Tabla*/
+
+#estadoEstable{
+  background-color: var(--color-accent-50) !important;
+  border: 0px !important;
+  color: var(--text-badge) !important;
+  font-weight: 500 !important;
+}
+
+#Version{
+  background-color: var(--color-grey-50) !important;
+  border: 0px !important;
+  color: var(--text-badge) !important;
+  font-weight: 500 !important;
+}
+
+/*Borde para el Main | Diseno | Colores*/
+
+.mainColorPrimary{
+  border: var(--color-sinco-Main) 1px solid !important;
+}
+
+.mainColorSecondary{
+  border: var(--color-secondary-sinco-Main) 1px solid !important;
+}
+
+/*Estilos para los colores | Diseno*/
+
+  .color-list {
+    display: grid;
+    padding: 0px !important;
+    margin: 0px !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .color-code{
+    padding: 0px !important;
+    margin: 0px !important;
+    align-items: center !important;
+    text-align: center !important;
+    font-weight: 600 !important;
+  }
+  .color-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    padding: 12px !important;
+    margin: 0px !important;
+    gap: 8px !important;
+    cursor: pointer;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .color-item:hover {
+    background: #f9fafb;
+  }
+  .color-preview {
+    width: 100%;
+    height: 64px;
+    border-radius: 4px;
+    border: 1px solid var(--color-accent-5);
+  }
+  .copied {
+    border-color: #8FC93A !important;
+  }

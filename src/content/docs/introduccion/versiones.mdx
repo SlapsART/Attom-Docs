@@ -1,5 +1,5 @@
 ---
-title: Versionamiento de Attom DS
+title: Versionamiento
 description: A guide in my new Starlight docs site.
 ---
 
@@ -65,14 +65,142 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 </div>
 </TabItem>
 <TabItem label="Componentes">
-<div id="tableActualizacion">
-<Badge size="medium" text="0.1" variant="note" class="Test" id="badgeVersionActual"/>
-| Las mesas | son | geniales |
-|----------|:-------------:|------:|
-| col 1 está | alineada a la izquierda | $1600 |
-| la columna 2 está | centrada | $12 |
-| la columna 3 está | alineada a la derecha | $1 |
+
+<div id="tableActualizacion1">
+
+   <table>
+      <thead>
+         <tr>
+            <th scope="col" class="componenteNumero">No.</th>
+            <th scope="col" class="componenteNombre">Componente</th>
+            <th scope="col" class="componenteEstado">Estado</th>
+            <th scope="col" class="componenteVersion">Versión</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr class="tablaCategoria">
+            <td></td>
+            <td class="textoCategoria">⭐ Inputs</td>
+            <td class="componenteEstado"></td>
+            <td class="componenteVersion"></td>
+         </tr>
+
+         <tr>
+         <td class="componenteNumero">1</td>
+            <td>Autocomplete</td>
+            <td class="componenteEstado"><Badge text="Estable" variant="note" id="estadoEstable"/></td>
+            <td class="componenteVersion"><Badge text="1.1" variant="note" id="Version"/></td>
+         </tr>
+
+         <tr>
+            <td class="componenteNumero">2</td>
+            <td>Button</td>
+            <td class="componenteEstado"><Badge text="Estable" variant="note" id="estadoEstable"/></td>
+            <td class="componenteVersion"><Badge text="1.1" variant="note" id="Version"/></td>
+         </tr>
+
+         <tr>
+            <td class="componenteNumero">3</td>
+            <td>Button Group</td>
+            <td class="componenteEstado"><Badge text="Estable" variant="note" id="estadoEstable"/></td>
+            <td class="componenteVersion"><Badge text="1.1" variant="note" id="Version"/></td>
+         </tr>
+
+         <tr>
+            <td class="componenteNumero">4</td>
+            <td>Checkbox</td>
+            <td class="componenteEstado"><Badge text="Estable" variant="note" id="estadoEstable"/></td>
+            <td class="componenteVersion"><Badge text="1.1" variant="note" id="Version"/></td>
+         </tr>
+
+         <tr>
+            <td class="componenteNumero">5</td>
+            <td>Floating Action Button</td>
+            <td class="componenteEstado"><Badge text="Estable" variant="note" id="estadoEstable"/></td>
+            <td class="componenteVersion"><Badge text="1.1" variant="note" id="Version"/></td>
+         </tr>
+
+         <tr>
+            <td class="componenteNumero">6</td>
+            <td>Radio Group</td>
+            <td class="componenteEstado"><Badge text="Estable" variant="note" id="estadoEstable"/></td>
+            <td class="componenteVersion"><Badge text="1.1" variant="note" id="Version"/></td>
+         </tr>
+
+         <tr>
+            <td class="componenteNumero">7</td>
+            <td>Rating</td>
+            <td class="componenteEstado"><Badge text="Estable" variant="note" id="estadoEstable"/></td>
+            <td class="componenteVersion"><Badge text="1.1" variant="note" id="Version"/></td>
+         </tr>
+
+         <tr>
+            <td class="componenteNumero">8</td>
+            <td>Select</td>
+            <td class="componenteEstado"><Badge text="Estable" variant="note" id="estadoEstable"/></td>
+            <td class="componenteVersion"><Badge text="1.1" variant="note" id="Version"/></td>
+         </tr>
+
+         <tr>
+            <td class="componenteNumero">9</td>
+            <td>Slider</td>
+            <td class="componenteEstado"><Badge text="Estable" variant="note" id="estadoEstable"/></td>
+            <td class="componenteVersion"><Badge text="1.1" variant="note" id="Version"/></td>
+         </tr>
+
+         <tr>
+            <td class="componenteNumero">10</td>
+            <td>Switch</td>
+            <td class="componenteEstado"><Badge text="Estable" variant="note" id="estadoEstable"/></td>
+            <td class="componenteVersion"><Badge text="1.1" variant="note" id="Version"/></td>
+         </tr>
+
+         <tr>
+            <td class="componenteNumero">11</td>
+            <td>Text Field</td>
+            <td class="componenteEstado"><Badge text="Estable" variant="note" id="estadoEstable"/></td>
+            <td class="componenteVersion"><Badge text="1.1" variant="note" id="Version"/></td>
+         </tr>
+
+         <tr>
+            <td class="componenteNumero">12</td>
+            <td>Transfer List</td>
+            <td class="componenteEstado"><Badge text="Estable" variant="note" id="estadoEstable"/></td>
+            <td class="componenteVersion"><Badge text="1.1" variant="note" id="Version"/></td>
+         </tr>
+
+         <tr>
+            <td class="componenteNumero">13</td>
+            <td>Toggle Button</td>
+            <td class="componenteEstado"><Badge text="Estable" variant="note" id="estadoEstable"/></td>
+            <td class="componenteVersion"><Badge text="1.1" variant="note" id="Version"/></td>
+         </tr>
+
+         <tr class="tablaCategoria">
+            <td></td>
+            <td class="textoCategoria">⭐ Data Display</td>
+            <td class="componenteEstado"></td>
+            <td class="componenteVersion"></td>
+         </tr>
+
+         <tr>
+            <td class="componenteNumero">14</td>
+            <td>Avatar</td>
+            <td class="componenteEstado"><Badge text="Estable" variant="note" id="estadoEstable"/></td>
+            <td class="componenteVersion"><Badge text="1.1" variant="note" id="Version"/></td>
+         </tr>
+
+         <tr>
+            <td class="componenteNumero">15</td>
+            <td>Badge</td>
+            <td class="componenteEstado"><Badge text="Estable" variant="note" id="estadoEstable"/></td>
+            <td class="componenteVersion"><Badge text="1.1" variant="note" id="Version"/></td>
+         </tr>
+      </tbody>
+   </table>
+
 </div>
+
 </TabItem>
 </Tabs>
 

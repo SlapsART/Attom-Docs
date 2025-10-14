@@ -48,11 +48,10 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Componentes',
+					label: 'Diseño',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Fundamentos', slug: 'componentes/fundamentos' },
-						{ label: 'Básicos', slug: 'componentes/basicos' },
+						{ label: 'Color', slug: 'diseno/color' },
 					],
 				},
 			],
