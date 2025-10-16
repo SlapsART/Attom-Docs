@@ -54,6 +54,13 @@ export default defineConfig({
 						{ label: 'Color', slug: 'diseno/color' },
 					],
 				},
+				{
+					label: 'Componentes',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Icons', slug: 'componentes/icons' },
+					],
+				},
 			],
 		}),
 	],

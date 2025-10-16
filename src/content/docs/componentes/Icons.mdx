@@ -1,0 +1,37 @@
+---
+title: Icons
+description: A guide in my new Starlight docs site.
+---
+
+import { Badge } from '@astrojs/starlight/components';
+
+El componente Icon de MUI funciona como un envoltorio para íconos basados en fuentes (font icons) que admiten ligaduras. 
+
+Te permite usar nombres de íconos como contenido, heredando por defecto el color del texto circundante
+
+```sh
+<Icon>star</Icon>
+```
+
+Además, acepta props útiles para personalizar su apariencia dentro del tema de tu aplicación.
+
+```sh
+<Icon fontSize="Small">star</Icon>
+```
+```sh
+<Icon color="Primary">star</Icon>
+```
+
+En el contexto de nuestro sistema de diseño, este componente es clave cuando queremos:
+
+- Integrar íconos en contexto tipográfico (listas, botones de texto, etc.),
+- Mantener consistencia visual sin depender exclusivamente de SVGs,
+- Aplicar estilos coherentes basados en el tema (colores, tamaños, variantes).
+
+### Fuente - Nuevo Iconos  <Badge text="Nuevo" size="medium" variant="tip" textAling="center" alignItems="center"/>
+
+<a href="\src\assets\MaterialIconsOutlined-Regular.otf" download>Descargar Documento</a>
+
+```sh
+<a href="ruta/al/tu/documento.pdf" download>Descargar Documento</a>
+```

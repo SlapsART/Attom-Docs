@@ -26,22 +26,63 @@
 
     /*Primary*/
 
-      --color-sinco-50: #E4ECF4;
-      --color-sinco-100: #BCD0E3;
-      --color-sinco-200: #BCD0E3;
-      --color-sinco-300: #6392BD;
-      --color-sinco-Light: #417AAE;
-      --color-sinco-Main: #2063A0;
-      --color-sinco-600: #1C5B98;
-      --color-sinco-700: #18518E;
-      --color-sinco-800: #0055B3;
-      --color-sinco-Dark: #0B3573;
+      /*SincoERP*/
+
+        --color-sinco-50: #E4ECF4;
+        --color-sinco-100: #BCD0E3;
+        --color-sinco-200: #BCD0E3;
+        --color-sinco-300: #6392BD;
+        --color-sinco-Light: #417AAE;
+        --color-sinco-Main: #2063A0;
+        --color-sinco-600: #1C5B98;
+        --color-sinco-700: #18518E;
+        --color-sinco-800: #0055B3;
+        --color-sinco-Dark: #0B3573;
+      
+      /*ADC*/
+
+        --color-ADC-sinco-50: #E5E7FA;
+        --color-ADC-sinco-100: #BEC4F2;
+        --color-ADC-sinco-200: #6876E0;
+        --color-ADC-sinco-300: #4758DA;
+        --color-ADC-sinco-Light: #939DE9;
+        --color-ADC-sinco-Main: #273BD3;
+        --color-ADC-sinco-600: #2335CE;
+        --color-ADC-sinco-700: #1D2DC8;
+        --color-ADC-sinco-800: #1726C2;
+        --color-ADC-sinco-Dark: #0E19B7;
+
+      /*ADPV*/
+
+        --color-ADPV-sinco-50: #F8FAFB;
+        --color-ADPV-sinco-100: #E6EFF0;
+        --color-ADPV-sinco-200: #D2E3E4;
+        --color-ADPV-sinco-300: #82C6CB;
+        --color-ADPV-sinco-Light: #2B9DA7;
+        --color-ADPV-sinco-Main: #058C97;
+        --color-ADPV-sinco-600: #04848F;
+        --color-ADPV-sinco-700: #047984;
+        --color-ADPV-sinco-800: #036F7A;
+        --color-ADPV-sinco-Dark: #015C69;
+
+      /*Bitákora*/
+
+        --color-BTK-sinco-50: #E4E7EA;
+        --color-BTK-sinco-100: #BBC2C9;
+        --color-BTK-sinco-200: #8D9AA6;
+        --color-BTK-sinco-300: #5F7182;
+        --color-BTK-sinco-Light: #3D5267;
+        --color-BTK-sinco-Main: #1B344C;
+        --color-BTK-sinco-600: #182F45;
+        --color-BTK-sinco-700: #14273C;
+        --color-BTK-sinco-800: #102133;
+        --color-BTK-sinco-Dark: #081524;
 
     /*Secondary*/
     
       --color-secondary-sinco-50: #E0F7FA;
-      --color-secondary-sinco-100: #E0F7FA;
-      --color-secondary-sinco-200: #E0F7FA;
+      --color-secondary-sinco-100: #B3EBF2;
+      --color-secondary-sinco-200: #80DEEA;
       --color-secondary-sinco-300: #4DD0E1;
       --color-secondary-sinco-Light: #26C6DA;
       --color-secondary-sinco-Main: #00BCD4;
@@ -49,6 +90,99 @@
       --color-secondary-sinco-700: #00ADC9;
       --color-secondary-sinco-800: #00A5C3;
       --color-secondary-sinco-Dark: #0097B9;
+
+      /*ADC*/
+
+        --color-secondary-ADC-sinco-50: #F9F9F9;
+        --color-secondary-ADC-sinco-100: #EFEFEF;
+        --color-secondary-ADC-sinco-200: #DADADA;
+        --color-secondary-ADC-sinco-300: #D2D2D2;
+        --color-secondary-ADC-sinco-Light: #E5E5E5;
+        --color-secondary-ADC-sinco-Main: #CACACA;
+        --color-secondary-ADC-sinco-600: #C5C5C5;
+        --color-secondary-ADC-sinco-700: #BDBDBD;
+        --color-secondary-ADC-sinco-800: #B7B7B7;
+        --color-secondary-ADC-sinco-Dark: #ABABAB;
+
+      /*Bitákora*/
+
+        --color-secondary-BTK-sinco-50: #E0F7FA;
+        --color-secondary-BTK-sinco-100: #B3EBF2;
+        --color-secondary-BTK-sinco-200: #80DEEA;
+        --color-secondary-BTK-sinco-300: #4DD0E1;
+        --color-secondary-BTK-sinco-Light: #4DADCE;
+        --color-secondary-BTK-sinco-Main: #2D9FC5;
+        --color-secondary-BTK-sinco-600: #00B6CF;
+        --color-secondary-BTK-sinco-700: #00ADC9;
+        --color-secondary-BTK-sinco-800: #00A5C3;
+        --color-secondary-BTK-sinco-Dark: #1172A3;
+
+  /*Semanticos*/
+
+    /*Success*/
+
+      --color-Success-sinco-50: #F2F9E7;
+      --color-Success-sinco-100: #DDEFC4;
+      --color-Success-sinco-200: #C7E49D;
+      --color-Success-sinco-300: #B1D975;
+      --color-Success-sinco-Light: #A0D158;
+      --color-Success-sinco-Main: #8FC93A;
+      --color-Success-sinco-600: #87C334;
+      --color-Success-sinco-700: #7CBC2C;
+      --color-Success-sinco-800: #72B525;
+      --color-Success-sinco-Dark: #60A918;
+
+    /*Error*/
+
+      --color-Error-sinco-50: #F9E8E8;
+      --color-Error-sinco-100: #F1C7C7;
+      --color-Error-sinco-200: #E8A1A1;
+      --color-Error-sinco-300: #DF7B7B;
+      --color-Error-sinco-Light: #D85F5F;
+      --color-Error-sinco-Main: #D14343;
+      --color-Error-sinco-600: #CC3D3D;
+      --color-Error-sinco-700: #C63434;
+      --color-Error-sinco-800: #C02C2C;
+      --color-Error-sinco-Dark: #B51E1E;
+
+    /*Info*/
+
+      --color-Info-sinco-50: #E6F3F8;
+      --color-Info-sinco-100: #C0E2EE;
+      --color-Info-sinco-200: #96CFE2;
+      --color-Info-sinco-300: #6CBCD6;
+      --color-Info-sinco-Light: #4DADCE;
+      --color-Info-sinco-Main: #2D9FC5;
+      --color-Info-sinco-600: #2897BF;
+      --color-Info-sinco-700: #228DB8;
+      --color-Info-sinco-800: #1C83B0;
+      --color-Info-sinco-Dark: #1172A3;
+
+    /*Warning*/
+
+      --color-Warning-sinco-50: #FFF0E0;
+      --color-Warning-sinco-100: #FEDAB3;
+      --color-Warning-sinco-200: #FDC280;
+      --color-Warning-sinco-300: #FCAA4D;
+      --color-Warning-sinco-Light: #FC9726;
+      --color-Warning-sinco-Main: #FB8500;
+      --color-Warning-sinco-600: #FA7D00;
+      --color-Warning-sinco-700: #FA7200;
+      --color-Warning-sinco-800: #F96800;
+      --color-Warning-sinco-Dark: #F85500;
+
+  /*Grey*/
+
+      --color-Grey-sinco-50: #FBFBFB;
+      --color-Grey-sinco-100: #F5F5F6;
+      --color-Grey-sinco-200: #EAEBEC;
+      --color-Grey-sinco-300: #DCDEE0;
+      --color-Grey-sinco-400: #CED1D4;
+      --color-Grey-sinco-500: #C4C7CA;
+      --color-Grey-sinco-600: #B9BDC1;
+      --color-Grey-sinco-700: #B2B7BB;
+      --color-Grey-sinco-800: #AAAEB3;
+      --color-Grey-sinco-900: #A2A6AB;
 }
 
 /*Estilos globales cards*/
@@ -180,9 +314,46 @@
   border: var(--color-sinco-Main) 1px solid !important;
 }
 
+.mainColorPrimaryADC{
+  border: var(--color-ADC-sinco-Main) 1px solid !important;
+}
+
+.mainColorPrimaryADPV{
+  border: var(--color-ADPV-sinco-Main) 1px solid !important;
+}
+
+.mainColorPrimaryBTK{
+  border: var(--color-BTK-sinco-Main) 1px solid !important;
+}
+
 .mainColorSecondary{
   border: var(--color-secondary-sinco-Main) 1px solid !important;
 }
+
+.mainColorSecondaryADC{
+  border: var(--color-secondary-ADC-sinco-Main) 1px solid !important;
+}
+
+.mainColorSecondaryBTK{
+  border: var(--color-secondary-BTK-sinco-Main) 1px solid !important;
+}
+
+.mainColorSuccess{
+  border: var(--color-Success-sinco-Main) 1px solid !important;
+}
+
+.mainColorError{
+  border: var(--color-Error-sinco-Main) 1px solid !important;
+}
+
+.mainColorInfo{
+  border: var(--color-Info-sinco-Main) 1px solid !important;
+}
+
+.mainColorWarning{
+  border: var(--color-Warning-sinco-Main) 1px solid !important;
+}
+
 
 /*Estilos para los colores | Diseno*/
 
