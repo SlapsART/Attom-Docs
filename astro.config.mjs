@@ -36,7 +36,7 @@ export default defineConfig({
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Acerca de Attom DS', slug: 'introduccion/acerca-de-attom' },
-						{ label: 'Actualizaciones', slug: 'introduccion/actualizaciones' },
+						//{ label: 'Actualizaciones', slug: 'introduccion/actualizaciones' },
 						{ label: 'Versionamiento', slug: 'introduccion/versiones' },
 					],
 				},

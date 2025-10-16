@@ -4,34 +4,137 @@ description: A guide in my new Starlight docs site.
 ---
 
 import { Badge } from '@astrojs/starlight/components';
+import { LinkButton } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
-El componente Icon de MUI funciona como un envoltorio para íconos basados en fuentes (font icons) que admiten ligaduras. 
+<Tabs>
+  <TabItem label="Diseño" icon="moon">
 
-Te permite usar nombres de íconos como contenido, heredando por defecto el color del texto circundante
 
-```sh
-<Icon>star</Icon>
-```
+        ### Implementación
 
-Además, acepta props útiles para personalizar su apariencia dentro del tema de tu aplicación.
+        El componente Icon de MUI funciona como un envoltorio para íconos basados en fuentes (font icons) que admiten ligaduras. 
 
-```sh
-<Icon fontSize="Small">star</Icon>
-```
-```sh
-<Icon color="Primary">star</Icon>
-```
+        Te permite usar nombres de íconos como contenido, heredando por defecto el color del texto circundante
 
-En el contexto de nuestro sistema de diseño, este componente es clave cuando queremos:
+        ```sh
+        <Icon>star</Icon>
+        ```
 
-- Integrar íconos en contexto tipográfico (listas, botones de texto, etc.),
-- Mantener consistencia visual sin depender exclusivamente de SVGs,
-- Aplicar estilos coherentes basados en el tema (colores, tamaños, variantes).
+        Además, acepta props útiles para personalizar su apariencia dentro del tema de tu aplicación.
 
-### Fuente - Nuevo Iconos  <Badge text="Nuevo" size="medium" variant="tip" textAling="center" alignItems="center"/>
+        ```sh
+        <Icon fontSize="Small">star</Icon>
+        ```
+        ```sh
+        <Icon color="Primary">star</Icon>
+        ```
 
-<a href="\src\assets\MaterialIconsOutlined-Regular.otf" download>Descargar Documento</a>
+        En el contexto de nuestro sistema de diseño, este componente es clave cuando queremos:
 
-```sh
-<a href="ruta/al/tu/documento.pdf" download>Descargar Documento</a>
-```
+        - Integrar íconos en contexto tipográfico (listas, botones de texto, etc.),
+        - Mantener consistencia visual sin depender exclusivamente de SVGs,
+        - Aplicar estilos coherentes basados en el tema (colores, tamaños, variantes).
+
+        ### Fuente  <Badge text="Nuevo" size="medium" variant="tip" textAling="center" alignItems="center"/>
+
+        Con esta actualización cambia el uso del componente Icon, se deja de lado y como obsoleto el uso de SVGs, para dar paso a el uso de una tipografía oficial que contiene más de 2.000 iconos.
+
+        :::tip[¿Cómo busco los iconos?]
+        Puedes tomar como referencia el sitio oficial de **[“MUI Icons”](https://mui.com/material-ui/material-icons/)**, es importante que le des el formato adecuado para que funcione, cosas que debes tener en cuenta: 
+        - **No admite mayúsculas**
+        - **No admite espacios**
+
+        ¿Ahora, como debería ser el formato correcto? Ejemplo:
+        - _(Sin formato)_ **AccountTreeOutlined** => _(Con formato)_ **account_tree_outlined**
+        :::
+
+        :::note[¿Qué debo tener en cuenta?]
+        Cada que encuentres una mayúscula **( A )**, no solo pasala a minuscula si no agrega un **( _ )**, esto hace que como se ve en el ejemplo anterior la tipografía pueda mostrar el icono correctamente.
+        :::
+
+        ##### Propiedades de la tipografía
+        Para este caso se toman 3 estilos definidos, a continuación verás cada estilo y sus propiedades.
+
+        <img
+        src="/Attom-Docs/src/assets/images/FontProperties.png"
+        width="100%"
+        decoding="async"
+        loading="lazy"
+        alt="Muestra de las propiedades de la tipografía"
+        />
+
+        :::caution[Importante]
+        Unicamente teniendo instalada la tipografía podrás usar la nueva forma de Iconos, no debes modificar ningun parametro y hacer **Detach Instance**.
+        :::
+
+        <LinkButton href="\src\assets\MaterialIconsOutlined-Regular.otf" icon="download" iconPlacement="start">
+        Descargar tipografía
+        </LinkButton>
+
+        <LinkButton href="https://mui.com/material-ui/material-icons/" variant="minimal" icon="star" iconPlacement="start">
+        Acceso a la librería
+        </LinkButton>
+
+        ### Tamaño
+        Para lograr cubrir la mayor variedad de tamaños se definene 3 y equivalen a lo siguiente:
+        - Small: **16px**
+        - Medium: **20px**
+        - Large: **34px**
+
+        <img
+        src="/Attom-Docs/src/assets/images/IconsSize.svg"
+        width="100%"
+        decoding="async"
+        loading="lazy"
+        alt="Muestra de los tamaños definidos para los iconos"
+        />
+
+        ### Aspectos generales
+
+        Los iconos deben ser usados con moderación, para apoyar ideas, conceptos o acciones. No se debe usar con fines netamente decorativos, por favor evite modificarlos o usar propiedades que no esten definidas.
+
+        #### General
+
+        Para funciones conocidas Ej. Eliminar _(Icono de caneca)_ use siempre que sea posible iconos ya reconocidos para estas acciones, evita el uso de iconos abstractos o destinados a usuarios muy técnicos.
+
+        #### Uso simple
+
+        No se recomienda el uso exesivo de iconos en una pantalla, no debe volverse pesado o un recurso común, ya que es para destacar o darle un detalle a elementos puntuales.
+
+        #### Global
+
+        El uso de iconos que llevan mucho tiempo representando una idea o acción son ideales para ser reconocidos y entendidos de forma rápida y eficiente; Se debe evitar reinventar iconos para funciones reconocidas o ya estandarizadas.
+
+  </TabItem>
+  <TabItem label="Accesibilidad" icon="star">
+
+        ### Contraste
+
+        Para asegurar la accesibilidad debes asegurar el uso de los iconos con un contraste **AAA** en todos los casos, si es por un motivo de peso lo mínimo a lo que puedes llegar es **AA**.
+
+        <div class="contraste">
+            
+            ##### Constraste correcto
+
+            <img
+            src="/Attom-Docs/src/assets/images/ContrastCheck.svg"
+            width="100%"
+            decoding="async"
+            loading="lazy"
+            alt="Muestra de los tamaños definidos para los iconos"
+            />
+
+            ##### Contraste incorrecto
+
+            <img
+            src="/Attom-Docs/src/assets/images/ContrastCancel.svg"
+            width="100%"
+            decoding="async"
+            loading="lazy"
+            alt="Muestra de los tamaños definidos para los iconos"
+            />
+        </div>
+  </TabItem>
+</Tabs>

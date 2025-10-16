@@ -188,7 +188,15 @@
 /*Estilos globales cards*/
 
 .card {
-  border-radius: 16px !important;
+  border-radius: 8px !important;
+}
+
+aside {
+  border-radius: 8px !important;
+}
+
+.expressive-code {
+  border-radius: 8px !important;
 }
 
 /*Estilos versionamiento desarrollo Stepper*/
@@ -395,3 +403,5 @@
   .copied {
     border-color: #8FC93A !important;
   }
+
+  /*Estilos componente iconos | Accesibilidad*/
