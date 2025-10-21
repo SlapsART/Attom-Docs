@@ -24,7 +24,7 @@ export default defineConfig({
 			},
 			description: 'Documentación oficial del diseño y desarrollo del sistema de diseño Attom.',
 			// Optional: add links to your social media profiles
-			//social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/SlapsART/Attom-Docs/tree/main' }],
 
 							// Ruta relativa a tu archivo CSS personalizado
 			customCss: [
