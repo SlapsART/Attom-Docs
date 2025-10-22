@@ -405,3 +405,43 @@ aside {
   }
 
   /*Estilos componente iconos | Accesibilidad*/
+
+  .icon-list {
+    display: grid;
+    padding: 0px !important;
+    margin: 0px !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+  }
+
+  .color-code{
+    padding: 0px !important;
+    margin: 0px !important;
+    align-items: center !important;
+    text-align: center !important;
+    font-weight: 600 !important;
+  }
+  .icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    padding: 12px !important;
+    margin: 0px !important;
+    gap: 8px !important;
+    cursor: pointer;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .icon-item:hover {
+    background: #f9fafb;
+  }
+  .color-preview {
+    width: 100%;
+    height: 64px;
+    border-radius: 4px;
+    border: 1px solid var(--color-accent-5);
+  }
+  .copied {
+    border-color: #8FC93A !important;
+  }

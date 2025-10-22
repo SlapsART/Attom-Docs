@@ -9,132 +9,198 @@ import { Image } from 'astro:assets';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <Tabs>
-  <TabItem label="Diseño" icon="moon">
+  <TabItem label="Diseño" icon="rocket">
 
 
-        ### Implementación
+      ### Implementación
 
-        El componente Icon de MUI funciona como un envoltorio para íconos basados en fuentes (font icons) que admiten ligaduras. 
+      El componente Icon de MUI actúa como un contenedor para íconos basados en fuentes que utilizan ligaduras.
 
-        Te permite usar nombres de íconos como contenido, heredando por defecto el color del texto circundante
+      Permite mostrar un ícono simplemente escribiendo su nombre como contenido, heredando por defecto el color del texto que lo rodea.
 
-        ```sh
-        <Icon>star</Icon>
-        ```
+      Es ideal cuando buscas una integración visual ligera, coherente y alineada con la tipografía del sistema de diseño.
 
-        Además, acepta props útiles para personalizar su apariencia dentro del tema de tu aplicación.
+      ```sh
+      <Icon>star</Icon>
+      ```
 
-        ```sh
-        <Icon fontSize="Small">star</Icon>
-        ```
-        ```sh
-        <Icon color="Primary">star</Icon>
-        ```
+      Además, el componente acepta props útiles que te permiten personalizar fácilmente su apariencia y adaptarlo al tema visual de tu aplicación.
 
-        En el contexto de nuestro sistema de diseño, este componente es clave cuando queremos:
+      Puedes ajustar propiedades como <Badge text="color" variant="tip" />, <Badge text="FontSize" variant="tip" />, <Badge text="sx" variant="tip" /> o <Badge text="baseClassName" variant="tip" /> para mantener coherencia con el diseño general y asegurar que el ícono se integre de forma consistente en cualquier contexto.
 
-        - Integrar íconos en contexto tipográfico (listas, botones de texto, etc.),
-        - Mantener consistencia visual sin depender exclusivamente de SVGs,
-        - Aplicar estilos coherentes basados en el tema (colores, tamaños, variantes).
+      ```sh
+      <Icon fontSize="Small">star</Icon>
+      ```
+      ```sh
+      <Icon color="Primary">star</Icon>
+      ```
 
-        ### Fuente  <Badge text="Nuevo" size="medium" variant="tip" textAling="center" alignItems="center"/>
+      En el contexto de nuestro sistema de diseño, el componente Icon cumple un papel clave al:
 
-        Con esta actualización cambia el uso del componente Icon, se deja de lado y como obsoleto el uso de SVGs, para dar paso a el uso de una tipografía oficial que contiene más de 2.000 iconos.
+      - Integrar íconos en el flujo tipográfico, como en listas, botones de texto o elementos informativos.
+      - Mantener la coherencia visual del producto sin depender exclusivamente de íconos SVG.
+      - Aplicar estilos consistentes colores, tamaños y variantes basados en el tema global de la aplicación.
 
-        :::tip[¿Cómo busco los iconos?]
-        Puedes tomar como referencia el sitio oficial de **[“MUI Icons”](https://mui.com/material-ui/material-icons/)**, es importante que le des el formato adecuado para que funcione, cosas que debes tener en cuenta: 
-        - **No admite mayúsculas**
-        - **No admite espacios**
+      ### Fuente  <Badge text="Nuevo" size="medium" variant="tip" textAling="center" alignItems="center"/>
 
-        ¿Ahora, como debería ser el formato correcto? Ejemplo:
-        - _(Sin formato)_ **AccountTreeOutlined** => _(Con formato)_ **account_tree_outlined**
-        :::
+      Con esta actualización, el uso del componente Icon marca un cambio importante en la forma en que gestionamos los íconos dentro del sistema de diseño.
 
-        :::note[¿Qué debo tener en cuenta?]
-        Cada que encuentres una mayúscula **( A )**, no solo pasala a minuscula si no agrega un **( _ )**, esto hace que como se ve en el ejemplo anterior la tipografía pueda mostrar el icono correctamente.
-        :::
+      Dejamos de lado el uso de SVGs individuales, considerándolos obsoletos en este contexto, para dar paso a una tipografía oficial de más de 2.000 íconos.
 
-        ##### Propiedades de la tipografía
-        Para este caso se toman 3 estilos definidos, a continuación verás cada estilo y sus propiedades.
+      Esta transición no solo optimiza el rendimiento y la consistencia visual, sino que también simplifica la integración y el mantenimiento de íconos en cualquier entorno o plataforma.
 
-        <img
-        src="https://github.com/SlapsART/Attom-Docs/blob/main/src/assets/images/FontProperties.png?raw=true"
-        width="100%"
-        decoding="async"
-        loading="lazy"
-        alt="Muestra de las propiedades de la tipografía"
-        />
+      :::tip[¿Cómo busco los iconos?]
+      Puedes consultar la lista completa de iconos en el sitio oficial de **[“MUI Icons”](https://mui.com/material-ui/material-icons/)**
+      
+      Recuerda que para que funcionen correctamente en tu proyecto:
+      - **Los nombres de los iconos deben estar en minúsculas.**
+      - **No se deben incluir espacios en sus nombres.**
 
-        :::caution[Importante]
-        Unicamente teniendo instalada la tipografía podrás usar la nueva forma de Iconos, no debes modificar ningun parametro y hacer **Detach Instance**.
-        :::
+      ¿Ahora, como debería ser el formato correcto? Ejemplo:
+      - _(Sin formato)_ **AccountTreeOutlined** => _(Con formato)_ **account_tree_outlined**
+      :::
 
-        <LinkButton href="https://github.com/SlapsART/Attom-Docs/raw/refs/heads/main/src/assets/MaterialIconsOutlined-Regular.otf" icon="download" iconPlacement="start">
-        Descargar tipografía
-        </LinkButton>
+      :::note[¿Qué debo tener en cuenta?]
+      Cada que encuentres una mayúscula **( A )**, no solo pasala a minuscula si no agrega un **( _ )**, esto hace que como se ve en el ejemplo anterior la tipografía pueda mostrar el icono correctamente.
+      :::
 
-        <LinkButton href="https://mui.com/material-ui/material-icons/" variant="minimal" icon="star" iconPlacement="start">
-        Acceso a la librería
-        </LinkButton>
+      ##### Propiedades de la tipografía
+      Para este caso se toman 3 estilos definidos, a continuación verás cada estilo y sus propiedades.
 
-        ### Tamaño
-        Para lograr cubrir la mayor variedad de tamaños se definene 3 y equivalen a lo siguiente:
-        - Small: **16px**
-        - Medium: **20px**
-        - Large: **34px**
+      <img
+      src="https://github.com/SlapsART/Attom-Docs/blob/main/src/assets/images/FontProperties.png?raw=true"
+      width="100%"
+      decoding="async"
+      loading="lazy"
+      alt="Muestra de las propiedades de la tipografía"
+      />
 
-        <img
-        src="https://raw.githubusercontent.com/SlapsART/Attom-Docs/5822ef84841cd6705c18023ad8e194d6d80eae53/src/assets/images/IconsSize.svg"
-        width="100%"
-        decoding="async"
-        loading="lazy"
-        alt="Muestra de los tamaños definidos para los iconos"
-        />
+      :::caution[Importante]
+      Unicamente teniendo instalada la tipografía podrás usar la nueva forma de Iconos, no debes modificar ningun parametro y hacer **Detach Instance**.
+      :::
 
-        ### Aspectos generales
+      <LinkButton href="https://github.com/SlapsART/Attom-Docs/raw/refs/heads/main/src/assets/MaterialIconsOutlined-Regular.otf" icon="download" iconPlacement="start">
+      Descargar tipografía
+      </LinkButton>
 
-        Los iconos deben ser usados con moderación, para apoyar ideas, conceptos o acciones. No se debe usar con fines netamente decorativos, por favor evite modificarlos o usar propiedades que no esten definidas.
+      <LinkButton href="https://mui.com/material-ui/material-icons/" variant="minimal" icon="star" iconPlacement="start">
+      Acceso a la librería
+      </LinkButton>
 
-        #### General
+      ### Tamaño
+      Para lograr cubrir la mayor variedad de tamaños se definene 3 y equivalen a lo siguiente:
+      - Small: **16px**
+      - Medium: **20px**
+      - Large: **34px**
 
-        Para funciones conocidas Ej. Eliminar _(Icono de caneca)_ use siempre que sea posible iconos ya reconocidos para estas acciones, evita el uso de iconos abstractos o destinados a usuarios muy técnicos.
+      <img
+      src="https://raw.githubusercontent.com/SlapsART/Attom-Docs/5822ef84841cd6705c18023ad8e194d6d80eae53/src/assets/images/IconsSize.svg"
+      width="100%"
+      decoding="async"
+      loading="lazy"
+      alt="Muestra de los tamaños definidos para los iconos"
+      />
 
-        #### Uso simple
+      ### Aspectos generales
 
-        No se recomienda el uso exesivo de iconos en una pantalla, no debe volverse pesado o un recurso común, ya que es para destacar o darle un detalle a elementos puntuales.
+      Usa los iconos con moderación: su propósito es reforzar ideas, conceptos o acciones, no servir como elementos puramente decorativos.
 
-        #### Global
+      Evita modificarlos o aplicarles propiedades que no estén definidas en el sistema de diseño.
 
-        El uso de iconos que llevan mucho tiempo representando una idea o acción son ideales para ser reconocidos y entendidos de forma rápida y eficiente; Se debe evitar reinventar iconos para funciones reconocidas o ya estandarizadas.
+      #### General
 
+      Para acciones comunes —como eliminar (icono de caneca)— utiliza siempre iconos reconocidos y familiares para los usuarios.
+
+      Evita emplear iconos abstractos o excesivamente técnicos, ya que pueden generar confusión o afectar la comprensión visual.
+
+      #### Uso simple
+
+      Evita el uso excesivo de iconos en una misma pantalla.
+
+      Los iconos deben ser un recurso puntual, utilizados para destacar información o reforzar acciones específicas, no como un elemento decorativo constante.
+      
+      #### Global
+
+      Los iconos reconocidos y estandarizados son ideales porque transmiten una acción o idea de forma rápida y clara.
+
+      Evita rediseñar o reinventar iconos que ya tienen un significado común: su fuerza está en la familiaridad y el reconocimiento inmediato.
+  
   </TabItem>
-  <TabItem label="Accesibilidad" icon="star">
+  <TabItem label="Accesibilidad" icon="heart">
 
-        ### Contraste
+      ### Contraste
 
-        Para asegurar la accesibilidad debes asegurar el uso de los iconos con un contraste **AAA** en todos los casos, si es por un motivo de peso lo mínimo a lo que puedes llegar es **AA**.
+      Para garantizar la accesibilidad, asegúrate de que los iconos cumplan con un contraste **mínimo AAA** en todos los casos.
 
-        <div class="contraste">
+      Solo en situaciones justificadas (como ajustes de peso visual), se permite un contraste **AA como nivel mínimo aceptable.**
+
+      <div class="contraste">
             
-            ##### Constraste correcto
+          ##### Constraste correcto
 
-            <img
-            src="https://raw.githubusercontent.com/SlapsART/Attom-Docs/246f01e76dd6162e5afd0225ef331d60631b5eea/src/assets/images/ContrastCheck.svg"
-            width="100%"
-            decoding="async"
-            loading="lazy"
-            alt="Muestra de los tamaños definidos para los iconos"
-            />
+          <img
+          src="https://raw.githubusercontent.com/SlapsART/Attom-Docs/246f01e76dd6162e5afd0225ef331d60631b5eea/src/assets/images/ContrastCheck.svg"
+          width="100%"
+          decoding="async"
+          loading="lazy"
+          alt="Muestra de los tamaños definidos para los iconos"
+          />
 
-            ##### Contraste incorrecto
+          ##### Contraste incorrecto
+ 
+          <img
+          src="https://raw.githubusercontent.com/SlapsART/Attom-Docs/5822ef84841cd6705c18023ad8e194d6d80eae53/src/assets/images/ContrastCancel.svg"
+          width="100%"
+          decoding="async"
+          loading="lazy"
+          alt="Muestra de los tamaños definidos para los iconos"
+          />
+      </div>
+  </TabItem>
+  <TabItem label="Librería" icon="open-book">
+      ### Iconos
 
-            <img
-            src="https://raw.githubusercontent.com/SlapsART/Attom-Docs/5822ef84841cd6705c18023ad8e194d6d80eae53/src/assets/images/ContrastCancel.svg"
-            width="100%"
-            decoding="async"
-            loading="lazy"
-            alt="Muestra de los tamaños definidos para los iconos"
-            />
-        </div>
+      Explora la librería oficial de iconos para encontrar el que mejor se adapte a tu necesidad.
+
+      Puedes buscar, copiar y pegar directamente el nombre del icono que desees usar.
+
+      <div class="icon-list">
+            <div class="icon-item" data-color="star_border">
+                  <img
+                  src="https://raw.githubusercontent.com/SlapsART/Attom-Docs/5822ef84841cd6705c18023ad8e194d6d80eae53/src/assets/images/icons/star.svg"
+                  width="100%"
+                  decoding="async"
+                  loading="lazy"
+                  alt="Muestra de los tamaños definidos para los iconos"
+                  />
+                  <h6 style={{margin: '0px !important'}}>Star</h6>
+            </div>
+      </div>
   </TabItem>
 </Tabs>
+
+<script is:inline>
+{`
+(function() {
+    function initCopiarIcono() {
+        const items = document.querySelectorAll('.icon-item');
+        items.forEach((item) => {
+            item.addEventListener('click', () => {
+                const colorCode = item.dataset.color;
+                navigator.clipboard.writeText(colorCode);
+                item.classList.add('copied');
+                setTimeout(() => item.classList.remove('copied'), 800);
+            });
+        });
+    }
+    
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCopiarIcono);
+    } else {
+        initCopiarIcono();
+    }
+    
+    document.addEventListener('astro:page-load', initCopiarIcono);
+})();
+`}
+</script>
